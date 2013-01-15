@@ -1,0 +1,88 @@
+#nav {display:none;}
+
+/* Mobile Navigation Styles */
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+nav {
+	display: block;
+	width: 100%;
+	background: $mid-secondary;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	height: auto;
+  	border-bottom: 0;
+  	overflow: hidden;
+  	margin-bottom: 40px;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+nav li {
+	position: relative;
+	display: block;
+	float: none;
+	width: 100%;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 40px;
+	text-align: left;
+  	width: 100%;
+  	text-indent: 25px;
+}
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border-bottom: 1px solid $dark-secondary;
+	border-left: 0;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:visited {
+	color: #ffffff;
+}
+nav a:hover, nav a:active {
+	background-color: $dark-secondary;
+}
+nav a#pull {
+	display: block;
+	background-color: $mid-secondary;
+	width: 100%;
+	position: relative;
+	color: #ffffff;
+}
+nav a#pull:visited, nav a#pull:hover, nav a#pull:active {
+	color: #ffffff;
+}
+nav a#pull:after {
+	content:"";
+	background: url('/img/nav-icon.png') no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
